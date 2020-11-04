@@ -1,0 +1,178 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:2em;
+  color:white;
+  background-color: black;
+}
+
+.container,.container-2{
+  position:relative;
+  margin:2% 15%;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.head-bold,.head-bold-2{
+  font-size:1.5em;
+  font-weight: bold;
+}
+.head-thin{
+  font-size:1em;
+  font-weight :100;
+}
+.fa-plus-circle{
+  color:blue;
+}
+.btn{
+  cursor:pointer;
+}
+.main-head,.main-head-2{
+    position: fixed;
+    top: 40%;
+    left: 35%;
+    width: 445px;
+    height: 226px;
+    display: flex;
+    align-items: center;
+}
+.view{
+  display:none;
+}
+
+.blur{
+  opacity:0.8;
+  filter: blur(10px);
+}
+.card-container-head,.card-container-head-2{
+    border:1px solid red;
+    border-radius:10px;
+    text-align:center;
+    margin:auto;
+    margin-top:10px;
+    color:red;
+    background-color: white;
+}
+.head,.head-2{
+    margin-bottom: 5px;
+    font-size:1rem;
+    font-weight:400;
+}
+input[type = "text"]{
+    border:1px solid red;
+    border-radius: 5px;
+    display: block;
+    padding:5px;
+    margin-top:20px;
+    margin-bottom:5px;
+    margin-left:50px;
+    margin-right:50px;
+    outline:none;
+    text-align: center;
+}
+
+button{
+    border:1px solid red;
+    background-color: red;
+    color:white;
+    border-radius: 15px;
+    margin-top:0px;
+    width:50px;
+    height:30px;
+    margin-bottom:20px;
+    cursor: pointer;
+    outline:none;
+}
+
+.cards-list,.card-list-2{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-container,.card-container-2{
+  min-width : 200px;
+  min-height : 300px;
+  border:1px solid red;
+  border-radius:10px;
+  padding-bottom:20px;
+  text-align:center;
+  position:relative;
+  margin :10px;
+  background-color: white;
+}
+
+.card-head-text,.card-head-text-2{
+  color:red;
+  text-align: center;
+  font-size: 20px;
+  margin:15px;
+}
+
+.icon,.icon-2{
+  color:blue;
+  position:absolute;
+  bottom:10px;
+  right:10px;
+}
+
+.fa-trash{
+  color:red;
+}
+
+.flex-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-item{
+  margin-right:30px;
+  font-size :0.5em;
+}
+.text{
+  color:black;
+  align-items: center;
+  margin :5px;
+}
+
+.card-item-marked{
+  font-size :0.5em;
+  color: #ff0000;
+  text-decoration: line-through;
+  margin-right:30px;
+}
+
+.markDone {
+  height: 20px;
+  width: auto;
+  color: white;
+  background-color:blue;
+  border :1px solid blue;
+}
+
+@media(max-width:600px){
+  .item{
+      display: none;
+  }
+  .container,.container-2{
+      margin:2% 10%;
+  }
+  .card-container-head,.card-container-2{
+      padding-top:20px;
+      padding-bottom:20px;
+  }
+}
+@media(max-width:360px){
+  .item{
+      display: none;
+  }
+  .container,.container-2{
+      margin:2% 5%;
+  }
+}
